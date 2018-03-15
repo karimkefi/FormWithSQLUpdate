@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--create a form that adds a new adult to the DB-->
+<!--Name + Gender + DOB + Pet Name-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Adult and Children form</title>
+</head>
+<body>
+<section>
+    <h1>FORM to add Adult and Children to database</h1>
+        <form method="post" action="sendtoDB.php">
+            Adult Name:<input type="text" name="formInputAdultName"><br>
+            DOB:<input type="date" name="formInputAdultDOB"><br>
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="formAdultGender" value="m"><br>
+            <label for="female">Female</label>
+            <input id="female" type="radio" name="formGender" value="f"><br>
+            <br>
+            <br>
+            Child Name:<input type="text" name="formInputChildName"><br>
+            DOB:<input type="date" name="formInputChildDOB"><br>
+            Favourite Color:<input type="text" name="formInputChildFavColor"><br>
+            <br>
+            Submit:<input type="submit" value="Send to DB!">
+        </form>
+</section>
+
+
+</body>
+</html>
